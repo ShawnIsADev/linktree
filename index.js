@@ -8,7 +8,7 @@ async function copyText(e){
     console.log(link)
     try{
        await navigator.clipboard.writeText(link)
-       alert("Copied!" + link)
+       alert("You copied! -> " + link)
     }catch(err){
         console.error(err)
     }
@@ -19,11 +19,13 @@ titleShareButtons.forEach(shareButton =>
     shareButton.addEventListener("click", copyText))
 
 
-// GSAP animations :)
+// // GSAP animations :)
+// removing for now
 
 const topShareButton = document.querySelector(".share-button")
-const tiles = document.querySelectorAll(".tile")
-gsap.from(topShareButton, {duration: 3,x: -300, y: () => Math.random() * 400 - 200, rotate: 1080})
-gsap.from(tiles, {duration: 2, x:-500, y:-200, stagger: 0.25})
+// const tiles = document.querySelectorAll(".tile")
+gsap.from(topShareButton, {duration: 3,x: -600, y: () => Math.random() * 400 - 200, rotate: 4320})
+// gsap.from(tiles, {duration: 2, x:-500, y:-200, stagger: 0.25})
+
 
 
