@@ -23,7 +23,7 @@ titleShareButtons.forEach(shareButton =>
 // removing for now
 
 const topShareButton = document.querySelector(".share-button")
-const bars = document.querySelectorAll(".bar")[0]
+const bars = document.querySelectorAll(".bar")
 gsap.from(topShareButton, {duration: 3,x: -600, y: () => Math.random() * 400 - 200, rotate: 4320})
 gsap.from(bars, {duration: 2, x:-500, y:200, rotate: 1080, stagger: 0.25})
 
