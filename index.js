@@ -35,10 +35,3 @@ const hamburgerMenu = document.querySelector(".hamburger-menu")
 function hamburgerEvent() {
     gsap.from(bars, {duration: 1.7, opacity: 0, x:() => Math.random() * 200 - 400, y:() => Math.random() * 400 - 200, rotate: 1080, stagger: 0.25})
 }
-
-
-
-function hamburgerEvent() {
-    gsap.from(bars, {duration: 1.7, opacity: 0, x:() => Math.random() * 200 - 400, y:() => Math.random() * 400 - 200, rotate: 1080, stagger: 0.25})
-}
-
