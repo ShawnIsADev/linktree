@@ -23,9 +23,17 @@ titleShareButtons.forEach(shareButton =>
 // removing for now
 
 const topShareButton = document.querySelector(".share-button")
-// const tiles = document.querySelectorAll(".tile")
+const bars = document.querySelectorAll(".bar")
 gsap.from(topShareButton, {duration: 3,x: -600, y: () => Math.random() * 400 - 200, rotate: 4320})
-// gsap.from(tiles, {duration: 2, x:-500, y:-200, stagger: 0.25})
+gsap.from(bars, {duration: 2, x:-500, y:200, rotate: 1080, stagger: 0.25})
 
 
+// event for the hamburger menu
+const hamburgerMenu = document.querySelector(".hamburger-menu")
+
+hamburgerEvent.addEventListener("click", hamburgerEvent)
+
+function hamburgerEvent() {
+    gsap.from(bars, {duration: 1.7, opacity: 0, x:() => Math.random() * 200 - 400, y:() => Math.random() * 400 - 200, rotate: 1080, stagger: 0.25})
+}
 
