@@ -69,7 +69,7 @@ body{
     }
 }
 
-.container h1 .span:hover{
+.container h1 span:hover{
     cursor: pointer;
     background: url(pexels-sitthan-kutty-913807.jpg);
     background-size: auto 200%;
