@@ -48,48 +48,16 @@ body{
 
 
 .container h1:hover{
-    display: flex;
-    background: url(pexels-daniel-torobekov-11258459.jpg);
-    background-size: auto 200%;
-    background-clip: text;
     text-transform: capitalize;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: anim 8s linear infinite;
-
     cursor: pointer;
-    
-}
-@keyframes anim{
-    
-    from{
-        background-position: center 200%;
-    } to{
-        background-position: center 0;
-    }
 }
 
-.container h1 span:hover{
-    cursor: pointer;
-    background: url(pexels-sitthan-kutty-913807.jpg);
-    background-size: auto 200%;
-    background-clip: text;
-    text-transform: capitalize;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: anime 8s linear infinite;
-}
 
-@keyframes anime{
-    from{
-        background-position: center 200%;
-    } to{
-        background-position: center 0;
-    }
-}
+
+
+
 
 header{
-    
     min-width: 92%;
     max-width: 788px;
     display: flex;
@@ -124,12 +92,15 @@ a{
     width: 100%;
     background-color: rgb(37,37,37);
     margin: 7px;
-    border-radius: 17px;
+    border-radius: 10px;
 }
 
 .tile:hover{
-    transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+    transition: cubic-bezier(.07, 1.41, .82, 1.41) 1s;
+    transform: scale(0.972);
 }
+
+
 a:hover:nth-child(3){
     color: rgb(23, 139, 162);
 }
@@ -138,10 +109,14 @@ a:hover:nth-child(4){
 }
 
 a:hover:nth-child(5){
-    color: #ff0000;
+    color: #e71414;
 }
 
 a:hover:nth-child(6){
+    color: #a0a4d1;
+}
+
+a:hover:nth-child(7){
     color: rgb(12, 202, 240);
 }
 
@@ -198,3 +173,4 @@ img{
         display: flex;
     }
 }
+
